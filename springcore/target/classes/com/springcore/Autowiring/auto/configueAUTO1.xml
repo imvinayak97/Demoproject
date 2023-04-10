@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+https://www.springframework.org/schema/context/spring-context.xsd">
+
+<context:annotation-config/>
+	<bean class="com.springcore.Autowiring.auto.Address1" name="temp1">
+
+		<property name="street" value="lbs marg" />
+		<property name="city" value="Mumbai" />
+	</bean>
+	
+	<bean class="com.springcore.Autowiring.auto.Address1" name="temp2">
+
+		<property name="street" value="sjk" />
+		<property name="city" value="Pune" />
+	</bean>
+	
+	<bean class="com.springcore.Autowiring.auto.Emp1" name="emp"
+		></bean>
+		
+		<!-- autowire="byType","constructor" -->
+</beans>
